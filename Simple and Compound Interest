@@ -1,0 +1,12 @@
+p=float(input(&quot;Enter principle amount&quot;))
+n=float(input(&quot;Enter number of years&quot;))
+r=float(input(&quot;Enter rate of interest&quot;))
+si=(p*n*r)/100
+print &quot;Simple Interest:&quot;,si
+t=int(input(&quot;Enter compound frequency:&quot;))
+q=(1+((r*t)/100))
+m=(n*t)
+a=(q**m)
+qi=p*a
+ci=qi-p
+print &quot;Compound Interest:&quot;,ci
