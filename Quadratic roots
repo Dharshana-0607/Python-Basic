@@ -1,0 +1,18 @@
+import math
+a=int(input(&quot;Enter a&quot;))
+b=int(input(&quot;Enter b&quot;))
+c=int(input(&quot;Enter c&quot;))
+if(a!=0):
+d= (b*b)-(4*a*c)
+if(d&gt;0):
+root1=(-b+math.sqrt(d)/(2*a))
+root2=(-b-math.sqrt(d)/(2*a))
+print&quot;Real and distinct roots, roots are &quot;,root1,root2
+
+elif(d==0):
+root=-b/(2*a)
+print &quot;Real and equal roots,roots are &quot;,root,root
+else:
+real=-b/(2*a)
+img=math.sqrt(-d)/(2*a)
+print &quot;Complex roots,roots are&quot;,real,img,&quot;-&quot;,img
