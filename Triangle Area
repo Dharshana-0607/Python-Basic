@@ -1,0 +1,22 @@
+import math
+menu=int(input(&quot;Enter 1 for bh method and 2 for sides method&quot;))
+if(menu==1):
+b=int(input(&quot;Enter breadth&quot;))
+h=int(input(&quot;Enter height&quot;))
+if(b&lt;=0 or h&lt;=0):
+print(&quot;Negative values not allowed!&quot;)
+else:
+area=(0.5*b*h)
+print &quot;Area is&quot;,area
+elif(menu==2):
+a=int(input(&quot;Enter a&quot;))
+b=int(input(&quot;Enter b&quot;))
+c=int(input(&quot;Enter c&quot;))
+if(a&lt;=0 or b&lt;=0 or c&lt;=0):
+print &quot;Negative value not allowed!&quot;
+else:
+s=(a+b+c)/2
+area=((s*(s-a)*(s-b)*(s-c))**0.5)
+print &quot;Area is&quot;,area
+else:
+print &quot;Invalid menu&quot;
